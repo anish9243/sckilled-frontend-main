@@ -7,12 +7,12 @@ import "firebase/storage";
 // @ts-ignore
 if (!firebase?.apps.length) {
   firebase.initializeApp({
-    apiKey: "AIzaSyAmamIqjmNiJWvyYwc3dSGGrNuG1dXBWwE",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "sckilled-9ebbb.firebaseapp.com",
     projectId: "sckilled-9ebbb",
     storageBucket: "sckilled-9ebbb.appspot.com",
     messagingSenderId: "743546942200",
-    appId: "1:743546942200:web:c3f43d4ce16a332fbfc10d",
+    appId: process.env.REACT_APP_API_ID,
     measurementId: "G-B2Y3N302ZZ",
   });
 } else {
